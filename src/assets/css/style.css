@@ -35,6 +35,10 @@ body {
     overflow: hidden;
 }
 
+.navigation.active {
+    width: 80px;
+}
+
 .navigation ul {
     position: ansolute;
     top: 0;
@@ -136,6 +140,11 @@ body {
     min-height: 100vh;
     background: var(--white);
     transition: 0.5s;
+ }
+
+ .main.active {
+    width: calc(100% - 80px);
+    left: 80px;
  }
 
  .topbar {
