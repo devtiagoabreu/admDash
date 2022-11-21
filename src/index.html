@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,56 +8,73 @@
     <title>Responsive Admin Dashboard</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="navigation">
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
-                        <span class="title">Brand Name</span>
+                        <span class="icon">
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </span>
+                        <span class="title">Pro Moda | Dash</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="title">Dashboard</span>
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Geral</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <span class="title">Customers</span>
+                        <span class="icon">
+                            <ion-icon name="cash-outline"></ion-icon>
+                        </span>
+                        <span class="title">Financeiro</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-                        <span class="title">Message</span>
+                        <span class="icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Comercial</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
-                        <span class="title">Help</span>
+                        <span class="icon">
+                            <ion-icon name="calculator-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contábil</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                        <span class="title">Settings</span>
+                        <span class="icon">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                        </span>
+                        <span class="title">Produção</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                        <span class="title">Password</span>
+                        <span class="icon">
+                            <ion-icon name="color-palette-outline"></ion-icon>
+                        </span>
+                        <span class="title">Beneficiamento</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                        <span class="title">Sign Out</span>
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="title">Perfil</span>
                     </a>
                 </li>
             </ul>
@@ -71,13 +89,13 @@
                 <!-- search -->
                 <div class="search">
                     <label for="">
-                        <input type="text" placeholder="Search Here">
+                        <input type="text" placeholder="Pesquisar">
                         <ion-icon name="search-outline"></ion-icon>
                     </label>
                 </div>
                 <!-- userImg -->
                 <div class="user">
-                    <img src="assets/img/user.jpg" alt="">
+                    <img src="assets/img/user.jfif" alt="">
                 </div>
             </div>
 
@@ -121,8 +139,163 @@
                 </div>
             </div>
 
-            
+            <!-- data details list -->
+            <div class="details">
+                <div class="recentData">
+                    <div class="cardHeader">
+                        <h2>Saldo de Fios</h2>
+                        <a href="#" class="btn">Detalhes</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><span class="codigo">Código</span></td>
+                                <td>Produto</td>
+                                <td>P.Líquido</td>
+                                <td>Volumes</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="codigo">7-00150-001-000001</span></td>
+                                <td>Fio 150/48 100% Poliéster Cru </td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status minimo">Mínimo</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00150-001-000008</span></td>
+                                <td>Fio 150/48 100% Poliéster Preto </td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00150-002-000001</span></td>
+                                <td>Fio 150/48 100% Poliéster 0T Cru </td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00150-002-000008</span></td>
+                                <td>Fio 150/48 100% Poliéster 0T Preto </td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status minimo">Mínimo</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00075-001-000001</span></td>
+                                <td>Fio 75/36 100% Poliéster Cru</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status baixo">Baixo</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00030-001-000001</span></td>
+                                <td>Fio 30/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00020-001-000001</span></td>
+                                <td>Fio 20/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status baixo">Baixo</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00016-001-000001</span></td>
+                                <td>Fio 16/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00012-001-000001</span></td>
+                                <td>Fio 12/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00004-002-000001</span></td>
+                                <td>Fio 4/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
+                <!-- Lista Dashboard Geral  -->
+                <div class="recentData">
+                    <div class="cardHeader">
+                        <h2>Dashboards</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Indicador</td>
+                                <td>Valor</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Faturamento</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Vendas Apro.</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Pontos</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Valor Ponto</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Pagar</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Pago</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Receber</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Recebido</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Despesas</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>ICMS</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>PIS</td>
+                                <td>5.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>COFINS</td>
+                                <td>5.000.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </di>
+            </div>
         </div>
     </div>
 
@@ -135,20 +308,21 @@
         let navigation = document.querySelector('.navigation');
         let main = document.querySelector('.main');
 
-        toggle.onclick = function() {
+        toggle.onclick = function () {
             navigation.classList.toggle('active');
             main.classList.toggle('active');
         }
 
         // ADD HOVERED CLASS IN SELECTED LIST ITEM
         let list = document.querySelectorAll('.navigation li');
-        function activeLink(){
+        function activeLink() {
             list.forEach((item) =>
-            item.classList.remove('hovered'));
-            this.classList.add('hovered'); 
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
         }
         list.forEach((item) =>
-        item.addEventListener('mouseover', activeLink));
+            item.addEventListener('mouseover', activeLink));
     </script>
 </body>
+
 </html>

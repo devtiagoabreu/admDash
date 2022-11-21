@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    position:relative;
+    position: relative;
     width: 100%;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
-   color: var(--blue);
+    color: var(--blue);
 }
 
 .navigation ul li a .icon {
@@ -85,13 +85,13 @@ body {
     height: 60px;
     line-height: 70px;
     text-align: center;
- }
+}
 
- .navigation ul li a .icon ion-icon{
-    font-size:1.75rem
- }
+.navigation ul li a .icon ion-icon {
+    font-size: 1.75rem
+}
 
- .navigation ul li a .title {
+.navigation ul li a .title {
     position: relative;
     display: block;
     padding: 0 10px;
@@ -99,12 +99,12 @@ body {
     line-height: 60px;
     text-align: start;
     white-space: nowrap;
- }
+}
 
- /* CURVE OUTSIDE */
+/* CURVE OUTSIDE */
 
- .navigation ul li:hover a::before,
- .navigation ul li.hovered a::before {
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
     content: '';
     position: absolute;
     right: 0;
@@ -115,10 +115,10 @@ body {
     border-radius: 50%;
     box-shadow: 35px 35px 0 10px var(--white);
     pointer-events: none;
- }
+}
 
- .navigation ul li:hover a::after,
- .navigation ul li.hovered a::after {
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
     content: '';
     position: absolute;
     right: 0;
@@ -129,56 +129,56 @@ body {
     border-radius: 50%;
     box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
- }
+}
 
- /* MAIN */
+/* MAIN */
 
- .main {
+.main {
     position: absolute;
     width: calc(100% - 300px);
     left: 300px;
     min-height: 100vh;
     background: var(--white);
     transition: 0.5s;
- }
+}
 
- .main.active {
+.main.active {
     width: calc(100% - 80px);
     left: 80px;
- }
+}
 
- .topbar {
+.topbar {
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
- }
+}
 
- .toggle {
+.toggle {
     position: relative;
-     width: 60px;
+    width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.5em;
     cursor: pointer;
- }
+}
 
- .search {
+.search {
     position: relative;
     width: 400px;
     margin: 0 10px;
- }
+}
 
- .search label {
+.search label {
     position: relative;
     width: 100%;
- }
+}
 
- .search label input {
+.search label input {
     width: 100%;
     height: 40px;
     border-radius: 40px;
@@ -187,45 +187,45 @@ body {
     font-size: 18px;
     outline: none;
     border: 1px solid var(--black2);
- }
+}
 
- .search label ion-icon {
+.search label ion-icon {
     position: absolute;
     top: 0;
     left: 10px;
     font-size: 1.2em;
- }
+}
 
- .user {
+.user {
     position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
- }
+}
 
- .user img {
+.user img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
- }
+}
 
- /* CARDS */
+/* CARDS */
 
- .cardBox {
+.cardBox {
     position: relative;
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
- }
+}
 
- .cardBox .card {
+.cardBox .card {
     position: relative;
     background: var(--white);
     padding: 30px;
@@ -234,42 +234,227 @@ body {
     justify-content: space-between;
     cursor: pointer;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
- }
+}
 
- .cardBox .card .numbers {
+.cardBox .card .numbers {
     position: relative;
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 2.0em;
     color: var(--blue);
- }
+}
 
- .cardBox .card .cardName {
-   color: var(--black2);
-   font-size: 1.1em;
-   margin-top: 5px;
- }
+.cardBox .card .cardName {
+    color: var(--black2);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
 
- .cardBox .card .iconBx {
+.cardBox .card .iconBx {
     color: var(--black2);
     font-size: 3.1em;
-  }
+}
 
-  .cardBox .card .iconBx {
+.cardBox .card .iconBx {
     color: var(--black2);
     font-size: 3.1em;
-  }
+}
 
-  .cardBox .card:hover {
-   background: var(--blue);
-  }
+.cardBox .card:hover {
+    background: var(--blue);
+}
 
-  .cardBox .card:hover .numbers,
-  .cardBox .card:hover .cardName,
-  .cardBox .card:hover .iconBx {
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
     color: var(--white);
-  }
+}
+
+/* TABLES */
+
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    /*margin-top: 10px;*/
+}
+
+.details .recentData {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2 {
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td {
+    font-weight: 600;
+}
+
+.details .recentData table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /*font-size: 14px;*/
+}
+
+.details .recentData table tr:last-child {
+    border-bottom: none;
+}
+
+.details .recentData table tbody tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.details .recentData table tr td {
+    padding: 7px;
+}
+
+.details .recentData table tr td:last-child {
+    text-align: start;
+}
+
+.details .recentData table tr td:nth-child(2) {
+    text-align: start;
+}
+
+.details .recentData table tr td:nth-child(3) {
+    text-align: start;
+}
+
+.status.normal {
+    padding: 2px 4px;
+    background: #8de02c;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status.baixo {
+    padding: 2px 4px;
+    background: #f3c006;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status.minimo {
+    padding: 2px 4px;
+    background: #d91717;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .navigation {
+        left: -300px;
+    }
+
+    .navigation.active {
+        width: 300px;
+        left: 0;
+    }
+
+    .main {
+        width: 100%;
+        left: 0;
+    }
+
+    .main.active {
+        left: 300px;
+    }
+
+    .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recentData {
+        overflow-x: auto;
+    }
+
+    .codigo {
+        display: none;
+    }
+}
 
 
+@media (max-width: 600px) {
+    .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
+@media (max-width: 480px) {
+    .cardHeader h2 {
+        font-size: 20px;
+    }
 
+    .user {
+        min-width: 40px;
+    }
 
+    .navigation {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    .navigation.active {
+        width: 100%;
+        left: 0;
+    }
+
+    .toggle {
+        z-index: 10001;
+        /*color: var(--black2);*/
+    }
+
+    .main.active .toggle {
+        position: fixed;
+        right: 0;
+        left: initial;
+        color: var(--white);
+    }
+}
