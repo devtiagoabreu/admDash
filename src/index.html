@@ -139,6 +139,16 @@
                 </div>
             </div>
 
+            <!--  ADD CHARTS  -->
+            <div class="graphBox">
+                <div class="box">
+                    <canvas id="chartSales"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="chartProduction"></canvas>
+                </div>
+            </div>
+
             <!-- data details list -->
             <div class="details">
                 <div class="recentData">
@@ -227,6 +237,27 @@
                                 <td>600</td>
                                 <td><span class="status normal">Normal</span></td>
                             </tr>
+                            <tr>
+                                <td><span class="codigo">7-00004-002-000001</span></td>
+                                <td>Fio 4/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00004-002-000001</span></td>
+                                <td>Fio 4/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo">7-00004-002-000001</span></td>
+                                <td>Fio 4/1 100% Algodão</td>
+                                <td>5,365</td>
+                                <td>600</td>
+                                <td><span class="status normal">Normal</span></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -294,35 +325,36 @@
                             </tr>
                         </tbody>
                     </table>
-                </di>
+                    </di>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+        <script src="assets/js/charts.js"></script>
+        <script>
+            // MenuToggle
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
 
-    <script>
-        // MenuToggle
-        let toggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.navigation');
-        let main = document.querySelector('.main');
+            toggle.onclick = function () {
+                navigation.classList.toggle('active');
+                main.classList.toggle('active');
+            }
 
-        toggle.onclick = function () {
-            navigation.classList.toggle('active');
-            main.classList.toggle('active');
-        }
-
-        // ADD HOVERED CLASS IN SELECTED LIST ITEM
-        let list = document.querySelectorAll('.navigation li');
-        function activeLink() {
+            // ADD HOVERED CLASS IN SELECTED LIST ITEM
+            let list = document.querySelectorAll('.navigation li');
+            function activeLink() {
+                list.forEach((item) =>
+                    item.classList.remove('hovered'));
+                this.classList.add('hovered');
+            }
             list.forEach((item) =>
-                item.classList.remove('hovered'));
-            this.classList.add('hovered');
-        }
-        list.forEach((item) =>
-            item.addEventListener('mouseover', activeLink));
-    </script>
+                item.addEventListener('mouseover', activeLink));
+        </script>
 </body>
 
 </html>
