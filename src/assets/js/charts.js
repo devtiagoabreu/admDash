@@ -7,7 +7,7 @@ new Chart(ctx_1, {
     labels: ['Ago', 'Set', 'Out'],
     datasets: [{
       label: 'Valor Ponto - Trimestral',
-      data: [0.42, 0.38, 0.36],
+      data: [0.56, 0.37, 0.40],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54,162, 235, 0.2)',
@@ -40,7 +40,7 @@ new Chart(ctx_2, {
     labels: ['Ago', 'Set', 'Out'],
     datasets: [{
       label: 'Faturamento - Trimestral',
-      data: [1200, 1900, 3000],
+      data: [2630801.61, 0, 2718502.76],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54,162, 235, 0.2)',
