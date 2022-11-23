@@ -40,7 +40,7 @@ new Chart(ctx_2, {
     labels: ['Ago', 'Set', 'Out'],
     datasets: [{
       label: 'Faturamento - Trimestral',
-      data: [2630801.61, 0, 2718502.76],
+      data: [2630801.61, 2779690.18, 2718502.76],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54,162, 235, 0.2)',

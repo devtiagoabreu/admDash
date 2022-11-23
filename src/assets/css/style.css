@@ -239,7 +239,7 @@ body {
 .cardBox .card .numbers {
     position: relative;
     font-weight: 500;
-    font-size: 2.0em;
+    font-size: 1.5em;
     color: var(--blue);
 }
 
