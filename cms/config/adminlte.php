@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'aTAGconnect CMS',
+    'title' => 'admDash CMS',
     'title_prefix' => '',
-    'title_postfix' => ' - aTAGconnect CMS',
+    'title_postfix' => ' - admDash CMS',
 
     /*
     |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'logo' => '<b>aTAGconnect</b> CMS',
+    'logo' => '<b>admDash</b> CMS',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image-xl',
     'logo_img_xl' => null,
@@ -173,21 +173,26 @@ return [
     */
 
     'menu' => [
-        [
-            'text'        => 'Dashboard',
-            'url'         => 'painel',
-            'icon'        => 'far fa-fw fa-file'
-        ],
+        //[
+        //    'text'        => 'Dashboard',
+        //    'url'         => 'painel',
+        //    'icon'        => 'far fa-fw fa-file'
+        //],
         [
             'text'        => 'Páginas',
             'url'         => 'painel/pages',
             'icon'        => 'far fa-fw fa-file'
         ],
         [
-            'text'        => 'aTAG',
-            'url'         => 'painel/atags',
+            'text'        => 'Indicadores Sintéticos',
+            'url'         => 'painel/indicators',
             'icon'        => 'far fa-fw fa-file'
         ],
+        //[
+        //    'text'        => 'aTAG',
+        //    'url'         => 'painel/atags',
+        //    'icon'        => 'far fa-fw fa-file'
+        //],
         //[
         //    'text'        => 'Contatos',
         //    'url'         => 'painel/contacts',

@@ -28,6 +28,7 @@ Route::prefix('painel')->group(function(){
     Route::resource('contacts', 'Admin\ContactController');
     Route::resource('publicLinks', 'Admin\PublicLinkController');
     Route::resource('atags', 'Admin\AtagController');
+    Route::resource('indicators', 'Admin\IndicatorController');
     Route::resource('adresses', 'Admin\AddressController');
     Route::resource('pixKeys', 'Admin\PixKeyController');
 
