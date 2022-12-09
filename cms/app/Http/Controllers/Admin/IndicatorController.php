@@ -114,20 +114,23 @@ class IndicatorController extends Controller
      */
     public function edit($id)
     {
+        
         $indicator = Indicator::find($id);
-
+ 
         $loggedId = intval( Auth::id() );
-
+        
         $pages = Page::where('user', $loggedId)->paginate(100);;
-
-        //if($indicator) {
-        //    return view('admin.indicators.edit', [
-        //        'indicator' => $indicator,
-        //        'pages' => $pages
-        //    ]);
-        //}
-
-        //return redirect()->route('indicators.index');
+       
+        if($indicator) {
+            return view('admin.indicators.edit', [
+                'indicator' => $indicator,
+                'pages' => $pages
+            ]);
+        }
+        
+        return redirect()->route('indicators.index'); 
+      
+      
     }
 
     /**
@@ -162,7 +165,6 @@ class IndicatorController extends Controller
                 ->withInput();
             }
 
-            $indicator = new Indicator;
             $indicator->description = $data['description'];
             $indicator->value_string = $data['value_string'];
             $indicator->value_number = $data['value_number'];
@@ -181,6 +183,9 @@ class IndicatorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $indicator = Indicator::find($id);
+        $indicator->delete();
+
+        return redirect()->route('indicators.index');
     }
 }

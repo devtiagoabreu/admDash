@@ -188,11 +188,11 @@ return [
             'url'         => 'painel/indicators',
             'icon'        => 'far fa-fw fa-file'
         ],
-        //[
-        //    'text'        => 'aTAG',
-        //    'url'         => 'painel/atags',
-        //    'icon'        => 'far fa-fw fa-file'
-        //],
+        [
+            'text'        => 'aTAG',
+            'url'         => 'painel/atags',
+            'icon'        => 'far fa-fw fa-file'
+        ],
         //[
         //    'text'        => 'Contatos',
         //    'url'         => 'painel/contacts',

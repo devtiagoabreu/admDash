@@ -115,7 +115,7 @@ class AtagController extends Controller
     public function edit($id)
     {
         $atag = Atag::find($id);
-
+        
         if($atag) {
             return view('admin.atags.edit', [
                 'atag' => $atag
@@ -175,6 +175,9 @@ class AtagController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $atag = Atag::find($id);
+        $atag->delete();
+
+        return redirect()->route('atags.index');
     }
 }

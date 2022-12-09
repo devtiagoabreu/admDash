@@ -18,3 +18,7 @@ Images: https://drive.google.com/drive/folders/1i2f66cFCg0X8OdlBj4WdS2_a12nAf2-U
 ionicons
 https://ionic.io/ionicons
 
+
+# models and controllers
+php artisan make:model Page
+php artisan make:controller PageController --resource
