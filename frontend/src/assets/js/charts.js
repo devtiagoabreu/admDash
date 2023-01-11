@@ -4,10 +4,10 @@ new Chart(ctx_1, {
   //type: 'bar',
   type: 'polarArea',
   data: {
-    labels: ['Ago', 'Set', 'Out'],
+    labels: ['Out', 'Nov', 'Dez'],
     datasets: [{
       label: 'Valor Ponto - Trimestral',
-      data: [0.56, 0.37, 0.40],
+      data: [0.0, 0.0, 0.0], //0.56, 0.37, 0.40], 'Ago', 'Set', 'Out'
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54,162, 235, 0.2)',
@@ -37,10 +37,10 @@ new Chart(ctx_2, {
   type: 'bar',
   //type: 'polarArea',
   data: {
-    labels: ['Ago', 'Set', 'Out'],
+    labels: ['Out', 'Nov', 'Dez'],
     datasets: [{
       label: 'Faturamento - Trimestral',
-      data: [2630801.61, 2779690.18, 2718502.76],
+      data: [1714242.74, 2508591.09, 1317348.20],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54,162, 235, 0.2)',

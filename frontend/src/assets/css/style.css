@@ -214,6 +214,24 @@ body {
     object-fit: cover;
 }
 
+/* DATE */
+
+.date {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.date h5 {
+    position: relative;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2em;
+    color: var(--black2);
+}
+
 /* CARDS */
 
 .cardBox {
@@ -241,6 +259,13 @@ body {
     font-weight: 500;
     font-size: 1.5em;
     color: var(--blue);
+}
+
+.cardBox .card .numbersprog {
+    position: relative;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--black2);
 }
 
 .cardBox .card .cardName {
