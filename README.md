@@ -22,3 +22,9 @@ https://ionic.io/ionicons
 # models and controllers
 php artisan make:model Page
 php artisan make:controller PageController --resource
+
+
+# react
+npm create vite@latest
+npm i axios react-router-dom
+npm run dev
