@@ -1,23 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { createBrowserRoute, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 // PAGES
 import Home from "./routes/Home";
 import NewPost from "./routes/NewPost";
 import './index.css'
 
-const router = createBrowserRoute([
+const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "/new",
-        element: <NewPost />
+        element: <NewPost />,
       },
     ],
   },
@@ -25,6 +25,6 @@ const router = createBrowserRoute([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
