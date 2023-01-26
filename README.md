@@ -11,6 +11,8 @@ Video02: https://www.youtube.com/watch?v=q3zc1ph5fvg
 Chart JS
 https://www.chartjs.org/
 
+React/axios: https://www.youtube.com/watch?v=NbhoeLj6lBs
+
 
 Images: https://drive.google.com/drive/folders/1i2f66cFCg0X8OdlBj4WdS2_a12nAf2-U
 
@@ -28,3 +30,7 @@ php artisan make:controller PageController --resource
 npm create vite@latest
 npm i axios react-router-dom
 npm run dev
+
+
+# ES7+ React/Redux/React-Native/JS snippets
+rafce
