@@ -12,6 +12,9 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
+#Tiago Abreu
+config.js
+
 # Logs
 logs
 *.log
