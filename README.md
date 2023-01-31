@@ -48,3 +48,9 @@ rafce
 -cardbox
 -card
 -graphBox
+
+
+# data-fetching
+npm create vite@latest
+npm i
+
