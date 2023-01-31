@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import NewPost from "./routes/NewPost";
 import './index.css'
+import Dashboard from './routes/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -16,9 +17,9 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/new",
-        element: <NewPost />,
-      },
+        path: "/dashboard",
+        element: <Dashboard />,
+      },      
     ],
   },
 ]);
