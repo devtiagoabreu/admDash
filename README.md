@@ -34,3 +34,17 @@ npm run dev
 
 # ES7+ React/Redux/React-Native/JS snippets
 rafce
+
+# hierarquia
+
+-body
+-container
+-navigation
+-main
+-topbar
+-toggle
+-search
+-user
+-cardbox
+-card
+-graphBox
