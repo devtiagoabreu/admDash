@@ -53,4 +53,5 @@ rafce
 # data-fetching
 npm create vite@latest
 npm i
+npm i axios
 
