@@ -56,5 +56,8 @@ npm create vite@latest
 npm i
 npm i axios
 npm run dev
+instalando o react-query
+npm i react-query
+
 
 
