@@ -51,7 +51,10 @@ rafce
 
 
 # data-fetching
+vídeo: https://www.youtube.com/watch?v=uNFB9EbQz90&ab_channel=Rocketseat
 npm create vite@latest
 npm i
 npm i axios
+npm run dev
+
 
